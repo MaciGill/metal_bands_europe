@@ -1,13 +1,29 @@
-# Metal Bands Around the World
+# Metal Bands in Europe and Worldwide
 
-An exploratory data-analysis project about the global metal scene. It uses country-level band data to explore where metal bands are based and how those patterns can be visualized.
+This project explores the geographic distribution of metal bands and the popularity of metal genres. It was created to practice data analysis and visualization, with a dark, metal-inspired style and a playful skull-emoji map.
+
+## Notebooks
+
+1. [`01_METAL_BANDS_EUROPE.ipynb`](./notebooks/01_METAL_BANDS_EUROPE.ipynb) counts bands by country and visualizes their distribution across Europe.
+2. [`02_METAL_GENRES.ipynb`](./notebooks/02_METAL_GENRES.ipynb) cleans and groups genre labels, compares overall genre totals, and presents separate top-10 genre charts for each continent. It also exports all seven charts as PNG files to [`visualization/`](./visualization/).
 
 
-## Built with
+## Run the notebooks
 
-`Python` · `pandas` · `NumPy` · `Plotly` · `Matplotlib` · `GitHub Copilot`
+1. Install Python and Jupyter Notebook, then install the libraries used by the analyses:
 
+   ```bash
+   python -m pip install -r requirements.txt
+   ```
 
----
+   PNG export uses Kaleido and requires Chrome or Chromium.
 
-*Made for the simple pleasure of exploring data — and celebrating heavy music.* 
+2. Start Jupyter from the repository root:
+
+   ```bash
+   jupyter notebook
+   ```
+
+3. Open either notebook in the `notebooks/` directory and run its cells from top to bottom.
+
+The notebooks look for `src/metal_bands.csv` relative to the current directory or the notebook directory's parent.
